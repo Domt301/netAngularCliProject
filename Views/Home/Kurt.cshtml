@@ -1,1 +1,11 @@
-﻿<h2>Serkan Is Ibne and Kurt but now in Azure!</h2>
+﻿@{
+    ViewData["Title"] = "Kurt";
+}
+
+<app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>
+
+<script src="~/dist/vendor.js" asp-append-version="true"></script>
+@section scripts {
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+}
+<h2>Serkan is Kurt and Ibne but now in Azure</h2>
