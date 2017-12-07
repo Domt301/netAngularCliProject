@@ -14,4 +14,8 @@ export class CounterComponent {
     public clearCounter(){
         this.currentCount = 0;
     }
+
+    public IncreaseOne(){
+        this.currentCount = this.currentCount + 1;
+    }
 }
